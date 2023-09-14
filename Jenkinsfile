@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'docker build -t yoejo/jenkins-react-web'
+                sh 'docker build -t yoejo/jenkins-react-web .'
                 sh 'docker push yoejo/jenkins-react-web'
             }
         }
